@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/com1314080901130_background1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <ImageButton
+            android:id="@+id/onplay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/com1314080901130_lattersong"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+
+        </LinearLayout>
+        <RelativeLayout 
+             android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/downplay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/com1314080901130_nextsong"/>
+
+            <ImageButton
+                android:id="@+id/play_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/com1314080901130_playmusic"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="69dp"
+                android:layout_marginStart="69dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/musics"
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:layout_weight="1.53" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+      <RelativeLayout 
+           android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        --<Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/exit" />
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
